@@ -1,0 +1,42 @@
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; /* normal font */
+  font-size: 16px;
+}
+
+.nav-link.fancy {
+  font-family: 'Great Vibes', cursive; /* only Models */
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+.rubik-marker-hatch {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
