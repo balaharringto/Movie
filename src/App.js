@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import Mainpage from './Components/Mainpage';
+import Repage from './Components/Repage';
+// import Mainpage from './Components/Mainpage';
 
 function App() {
   return (
   <>
-  <Mainpage/>
+  {/* <Mainpage/> */}
+
+<Repage/>
   </>
   );
 }
