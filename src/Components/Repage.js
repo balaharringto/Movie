@@ -12,7 +12,7 @@ function Repage(){
       
  
       <Routes>
-        <Route path="/Fashion" element={<Mainpage/>} />
+        <Route path="/Fashion/" element={<Mainpage/>} />
         <Route path="/mens" element={<Mens/>} />
         <Route path="/womens" element={<Womens/>} />
         <Route path="/kids" element={<Kids/>} />

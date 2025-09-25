@@ -71,7 +71,7 @@ function Mainpage() {
             {/* Center Navbar Links */}
             <Box sx={{ display: "flex", gap: 4, marginTop: 1 }}>
               <Link
-                to="/Fashion"
+                to="/Fashion/"
                 className={active === "Home" ? "active fancy" : "fancy"}
                 style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}
                 onClick={() => setActive("Home")}
