@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Movie/static/css/main.5468decb.css",
+    "main.js": "/Movie/static/js/main.95103acf.js",
+    "static/js/488.2ff67e2a.chunk.js": "/Movie/static/js/488.2ff67e2a.chunk.js",
+    "static/media/Firstim.png": "/Movie/static/media/Firstim.eab67743ec73c2308d3d.png",
+    "static/media/great-vibes-latin-ext-400-normal.woff2": "/Movie/static/media/great-vibes-latin-ext-400-normal.771ce16cad228d2b7332.woff2",
+    "static/media/great-vibes-latin-ext-400-normal.woff": "/Movie/static/media/great-vibes-latin-ext-400-normal.63d8b0f73ac45e775d66.woff",
+    "static/media/great-vibes-cyrillic-400-normal.woff2": "/Movie/static/media/great-vibes-cyrillic-400-normal.3591083f90922b3d6ca3.woff2",
+    "static/media/great-vibes-latin-400-normal.woff2": "/Movie/static/media/great-vibes-latin-400-normal.4bee473dd2d6f4e26caf.woff2",
+    "static/media/montserrat-latin-ext-400-normal.woff": "/Movie/static/media/montserrat-latin-ext-400-normal.89d9bb7d8d46019bbb7b.woff",
+    "static/media/great-vibes-cyrillic-400-normal.woff": "/Movie/static/media/great-vibes-cyrillic-400-normal.679aedcd74b6226d43b6.woff",
+    "static/media/great-vibes-latin-400-normal.woff": "/Movie/static/media/great-vibes-latin-400-normal.01d158593352164f1ea3.woff",
+    "static/media/montserrat-latin-ext-400-normal.woff2": "/Movie/static/media/montserrat-latin-ext-400-normal.2d8121b81156105f33b9.woff2",
+    "static/media/montserrat-latin-400-normal.woff": "/Movie/static/media/montserrat-latin-400-normal.907a356a92ed8599f660.woff",
+    "static/media/montserrat-latin-400-normal.woff2": "/Movie/static/media/montserrat-latin-400-normal.be11f029bc2fff5574a8.woff2",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/Movie/static/media/montserrat-cyrillic-ext-400-normal.f6089642713132ee161e.woff",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/Movie/static/media/montserrat-cyrillic-ext-400-normal.98c6748b7d590ea7b980.woff2",
+    "static/media/great-vibes-vietnamese-400-normal.woff2": "/Movie/static/media/great-vibes-vietnamese-400-normal.ff4e03fe67dded1f531a.woff2",
+    "static/media/montserrat-cyrillic-400-normal.woff2": "/Movie/static/media/montserrat-cyrillic-400-normal.f1372c6da10f0872f256.woff2",
+    "static/media/montserrat-cyrillic-400-normal.woff": "/Movie/static/media/montserrat-cyrillic-400-normal.fdfc849048f4ae886918.woff",
+    "static/media/great-vibes-vietnamese-400-normal.woff": "/Movie/static/media/great-vibes-vietnamese-400-normal.2a17a912d42039b5d9fe.woff",
+    "static/media/montserrat-vietnamese-400-normal.woff2": "/Movie/static/media/montserrat-vietnamese-400-normal.08d11513a3457d97615f.woff2",
+    "static/media/montserrat-vietnamese-400-normal.woff": "/Movie/static/media/montserrat-vietnamese-400-normal.b8cc86df02e09d41231f.woff",
+    "static/media/great-vibes-cyrillic-ext-400-normal.woff2": "/Movie/static/media/great-vibes-cyrillic-ext-400-normal.db6c82acfc434206a15d.woff2",
+    "static/media/great-vibes-greek-ext-400-normal.woff2": "/Movie/static/media/great-vibes-greek-ext-400-normal.6a9fd7a6c7d570ba975b.woff2",
+    "static/media/great-vibes-cyrillic-ext-400-normal.woff": "/Movie/static/media/great-vibes-cyrillic-ext-400-normal.32f279aa3ab0c5c06594.woff",
+    "static/media/great-vibes-greek-ext-400-normal.woff": "/Movie/static/media/great-vibes-greek-ext-400-normal.452b2fdf08fb5a476c65.woff",
+    "index.html": "/Movie/index.html",
+    "main.5468decb.css.map": "/Movie/static/css/main.5468decb.css.map",
+    "main.95103acf.js.map": "/Movie/static/js/main.95103acf.js.map",
+    "488.2ff67e2a.chunk.js.map": "/Movie/static/js/488.2ff67e2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5468decb.css",
+    "static/js/main.95103acf.js"
+  ]
+}
