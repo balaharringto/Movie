@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Movie/static/css/main.5468decb.css",
-    "main.js": "/Movie/static/js/main.95103acf.js",
+    "main.js": "/Movie/static/js/main.ec0b829b.js",
     "static/js/488.2ff67e2a.chunk.js": "/Movie/static/js/488.2ff67e2a.chunk.js",
     "static/media/Firstim.png": "/Movie/static/media/Firstim.eab67743ec73c2308d3d.png",
     "static/media/great-vibes-latin-ext-400-normal.woff2": "/Movie/static/media/great-vibes-latin-ext-400-normal.771ce16cad228d2b7332.woff2",
@@ -28,11 +28,11 @@
     "static/media/great-vibes-greek-ext-400-normal.woff": "/Movie/static/media/great-vibes-greek-ext-400-normal.452b2fdf08fb5a476c65.woff",
     "index.html": "/Movie/index.html",
     "main.5468decb.css.map": "/Movie/static/css/main.5468decb.css.map",
-    "main.95103acf.js.map": "/Movie/static/js/main.95103acf.js.map",
+    "main.ec0b829b.js.map": "/Movie/static/js/main.ec0b829b.js.map",
     "488.2ff67e2a.chunk.js.map": "/Movie/static/js/488.2ff67e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5468decb.css",
-    "static/js/main.95103acf.js"
+    "static/js/main.ec0b829b.js"
   ]
 }
