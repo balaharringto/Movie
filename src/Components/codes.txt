@@ -1,0 +1,298 @@
+mens code og 
+import React, { useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Box,
+  IconButton,
+  InputBase,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Grid,
+  useMediaQuery,
+  useTheme,
+
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import { Link } from "react-router-dom";
+
+// import Dress from "./Dress";
+import "./Navbar.css";
+import "./Font.css";
+import imgDesktop from "../images/Firstim.png";
+import imgMobile from "../images/mobileim2.png";
+
+import "@fontsource/montserrat"; 
+import "@fontsource/great-vibes"; 
+import Mens from "./Mens";
+
+function Mainpage() {
+  const [active, setActive] = useState("Home");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const theme = useTheme();
+
+  const isMobile = useMediaQuery("(max-width:600px)");
+  const toggleDrawer = (open) => () => {
+    setDrawerOpen(open);
+  };
+
+  const navbarLinks = [
+    { label: "Home", to: "/Movie/" },
+    { label: "Mens", to: "/mens" },
+    { label: "Womens", to: "/womens" },
+    { label: "Kids", to: "/kids" },
+    { label: "Newdesign", to: "/Newdesign" },
+  ];
+
+  // Mobile view
+ if (isMobile) {
+    // ✅ Mobile view
+    return (
+      <Box sx={{ width: "100%", minHeight: "100vh" }}>
+        {/* First Section with Mobile Image */}
+        <Box
+          sx={{
+            height: "100vh",
+            width: "100%",
+            backgroundImage: `url(${imgMobile})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          {/* AppBar overlay */}
+          <AppBar
+            position="absolute"
+            sx={{
+              background: "transparent",
+              boxShadow: "none",
+              width: "100%",
+            }}
+          >
+            <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+              {/* Left: Fashion */}
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: "bold",
+                  color: "black",
+                  fontFamily: '"Rubik Marker Hatch", system-ui',
+                  fontSize: "1.4rem",
+                }}
+              >
+                Fashion
+              </Typography>
+
+              {/* Center: Search */}
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  maxWidth: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  backgroundColor: "rgba(255,255,255,0.8)",
+                  padding: "2px 6px",
+                  borderRadius: "8px",
+                  mx: 2,
+                }}
+              >
+                <SearchIcon sx={{ color: "gray", fontSize: 18 }} />
+                <InputBase
+                  placeholder="Search..."
+                  sx={{ ml: 1, fontSize: 13, width: "100%" }}
+                />
+              </Box>
+
+              {/* Right: Menu Icon */}
+              <IconButton onClick={toggleDrawer(true)}>
+                <MenuIcon sx={{ color: "black" }} />
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+
+          {/* Drawer for Navbar */}
+          <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+            <List sx={{ width: 250 }}>
+              {navbarLinks.map((link) => (
+                <ListItem
+                  button
+                  key={link.label}
+                  component={Link}
+                  to={link.to}
+                  onClick={() => {
+                    setActive(link.label);
+                    setDrawerOpen(false);
+                  }}
+                  selected={active === link.label}
+                >
+                  <ListItemText primary={link.label} />
+                </ListItem>
+              ))}
+            </List>
+          </Drawer>
+        </Box>
+
+        {/* Scrollable next section */}
+        <Mens/>
+      </Box>
+    );
+  }
+
+
+
+
+  // Desktop view
+  return (
+    <Box>
+      <Box
+        sx={{
+          height: "100vh",
+          width: "100%",
+          backgroundImage: `url(${imgDesktop})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+          overflow: "hidden",
+          margin: "0 auto",
+          borderBottomLeftRadius: "20px",
+          borderBottomRightRadius: "20px",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+        }}
+      >
+        <AppBar
+          position="absolute"
+          sx={{ background: "transparent", boxShadow: "none", width: "100%" }}
+        >
+          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                color: "black",
+                fontFamily: '"Rubik Marker Hatch", system-ui',
+              }}
+            >
+              Fashion Industries
+            </Typography>
+
+            <Box sx={{ display: "flex", gap: 4, marginTop: 1 }}>
+              {navbarLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className={active === link.label ? "active fancy" : "fancy"}
+                  style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}
+                  onClick={() => setActive(link.label)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </Box>
+
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  backgroundColor: "rgba(255,255,255,0.7)",
+                  padding: "2px 8px",
+                  borderRadius: "10px",
+                  width: "300px",
+                }}
+              >
+                <SearchIcon sx={{ fontSize: 20, color: "gray" }} />
+                <InputBase
+                  placeholder="Search..."
+                  sx={{ ml: 1, fontSize: 14, width: "100%" }}
+                />
+              </Box>
+
+              {/* Icons */}
+              {[AccountCircleIcon, FavoriteBorderIcon, ShoppingBagIcon].map(
+                (Icon, idx) => (
+                  <IconButton key={idx} sx={{ color: "black", marginTop: "20px" }}>
+                    <Grid container direction="column" alignItems="center" spacing={0}>
+                      <Grid item>
+                        <Icon />
+                      </Grid>
+                      <Grid item>
+                        <Typography sx={{ color: "black", fontSize: 14 }}>
+                          {idx === 0
+                            ? "Profile"
+                            : idx === 1
+                            ? "Watch List"
+                            : "Saved"}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                  </IconButton>
+                )
+              )}
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
+
+<Mens/>
+    </Box>
+  );
+}
+
+export default Mainpage;
+------------------------------------------------------------------------------------------
+
+two mainpage 
+import React from "react";
+import { Box } from "@mui/material";
+import imgDesktop from "../images/Firstim.png";
+import imgMobile from "../images/mobileim2.png";
+import Mens from "./Mens";
+import { useMediaQuery } from "@mui/material";
+
+function Mainpage() {
+  const isMobile = useMediaQuery("(max-width:600px)");
+
+  return (
+    <Box>
+      {/* First Section with Image (mobile or desktop) */}
+      <Box
+        sx={{
+          height: "100vh",
+          width: "100%",
+          backgroundImage: `url(${isMobile ? imgMobile : imgDesktop})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+          overflow: "hidden",
+          margin: "0 auto",
+          borderBottomLeftRadius: "20px",
+          borderBottomRightRadius: "20px",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+        }}
+      />
+
+      {/* Next Section */}
+      <Mens />
+    </Box>
+  );
+}
+
+export default Mainpage;

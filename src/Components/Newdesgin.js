@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Typography, Card, CardMedia, CardContent, Button, Rating } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import im1 from "../images/saimg1.png";
-import im2 from "../images/saimg2.png";
-import im3 from "../images/saimg5.png";
-import im4 from "../images/saimg4.png";
-import Kids from "./Kids";
+import im1 from "../images/New/nimg1.png";
+import im2 from "../images/New/nimg2.png";
+import im3 from "../images/New/nimg3.png";
+import im4 from "../images/New/nimg4.png";
+import Footer from "./Footer";
 
 const categories = [
   {
@@ -35,7 +35,7 @@ const categories = [
   {
     id: 3,
     brand: "PANTS",
-    title: "Classic, tailored pants",
+    title: "Classic pants",
     price: 959,
     originalPrice: 2999,
     discount: "68% OFF",
@@ -58,11 +58,11 @@ const categories = [
   },
 ];
 
-export default function Womens() {
+ function Newdesgin() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ p: { xs: 2, sm: 3 },mt:{xs:7}, minHeight: "100vh", backgroundColor: "#fff" }}>
+    <Box sx={{ p: { xs: 2, sm: 3 }, minHeight: "100vh", mt: 2, backgroundColor: "#fff" }}>
       {/* Page Heading */}
       <Typography
         variant="h5"
@@ -72,9 +72,10 @@ export default function Womens() {
           color: "#333",
           mb: { xs: 3, sm: 4 },
           fontFamily: '"Rubik Marker Hatch", system-ui',
+          mt:{xs:5}
         }}
       >
-        WOMENS FASHION'S
+        NEW FASHION'S 2025
       </Typography>
 
       {/* Grid of Categories */}
@@ -101,7 +102,7 @@ export default function Womens() {
               component="img"
               image={item.image}
               alt={item.title}
-              sx={{ height: { xs: 180, sm: 250 }, objectFit: "cover" }}
+              sx={{ height: { xs: 200, sm: 350 },marginTop:{xs:2}, objectFit: "cover" }}
             />
 
             {/* Category Info */}
@@ -150,7 +151,9 @@ export default function Womens() {
           </Card>
         ))}
       </Box>
-      <Kids/>
+      <Footer/>
     </Box>
   );
 }
+
+export default Newdesgin;
